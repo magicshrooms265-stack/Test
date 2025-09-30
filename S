@@ -4,8 +4,8 @@ import subprocess
 import threading
 
 # Replace with your actual devices from /dev/input/by-id/
-keyboard_dev = '/dev/input/by-id/usb-Logitech_USB_Keyboard-event-kbd'
-mouse_dev = '/dev/input/by-id/usb-Logitech_USB_Optical_Mouse-event-mouse'
+keyboard_dev = '/dev/input/event18/Mouse
+mouse_dev = '/dev/input/event19/Keyboard
 
 # Start hidclient
 hid = subprocess.Popen(['sudo', './hidclient', '-d', 'hidd', '-c'], stdin=subprocess.PIPE)
